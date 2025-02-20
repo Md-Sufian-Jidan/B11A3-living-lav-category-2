@@ -30,9 +30,9 @@
         extend: {
           colors: {
             clifford: '#da373d',
-            'primary-color': '#FFF9F4',
             'btn-color': '#179800',
-            'word-primary': '#111111'
+            'word-primary': '#111111',
+            'card-color': '#EFEBE3',
           }
         }
       }
@@ -86,7 +86,42 @@
     </section>
   </header>
   <main>
+    <!-- Services section -->
+    <section class="md:mx-32 my-20">
+      <h3 class="text-btn-color text-4xl font-semibold mb-12">Services</h3>
+      <!-- services card section -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:mx-0 mx-5">
+        <!-- first card -->
+        <div
+          class="md:w-[350px] flex flex-col justify-center items-center text-center bg-card-color p-8 rounded-xl space-y-3">
+          <img class="bg-white p-5 rounded-full" src="c2-assets/service.png" alt="">
+          <h4 class="text-2xl font-semibold text-word-primary">24/7 Services </h4>
+          <p class="text-xl font-light text-word-primary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            do
+            eiusmod tempor incididunt</p>
+        </div>
+        <!-- second card -->
+        <div
+          class="md:w-[350px] flex flex-col justify-center items-center text-center bg-card-color p-8 rounded-xl space-y-3">
+          <img class="bg-white p-5 rounded-full" src="c2-assets/delivery.png" alt="">
+          <h4 class="text-2xl font-semibold text-word-primary">Fast Delivery</h4>
+          <p class="text-xl font-light text-word-primary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            do
+            eiusmod tempor incididunt</p>
+        </div>
+        <!-- third card -->
+        <div
+          class="md:w-[350px] flex flex-col justify-center items-center text-center bg-card-color p-8 rounded-xl space-y-3">
+          <img class="bg-white p-5 rounded-full" src="c2-assets/healthy.png" alt="">
+          <h4 class="text-2xl font-semibold text-word-primary">Healthy Products </h4>
+          <p class="text-xl font-light text-word-primary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            do
+            eiusmod tempor incididunt</p>
+        </div>
 
+      </div>
+
+    </section>
   </main>
   <footer></footer>
 </body>
