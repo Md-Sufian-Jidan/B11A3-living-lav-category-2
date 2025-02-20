@@ -1,69 +1,94 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jj Nature Shop</title>
-    <!-- daisy ui and tailwind css -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jj Nature Shop</title>
+  <!-- daisy ui and tailwind css -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- sora font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+  <style>
+    .sora-font {
+      font-family: "Sora", serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+    }
+  </style>
+  <!-- font awesome cdn link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- primary colors -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'primary-color': '#FFF9F4',
+            'btn-color': '#179800',
+            'word-primary': '#111111'
+          }
+        }
+      }
+    }
+  </script>
 </head>
+
 <body>
-    <header>
-        <div class="navbar bg-base-100">
-            <div class="navbar-start">
-              <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M4 6h16M4 12h8m-8 6h16" />
-                  </svg>
-                </div>
-                <ul
-                  tabindex="0"
-                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                  <li><a>Item 1</a></li>
-                  <li>
-                    <a>Parent</a>
-                    <ul class="p-2">
-                      <li><a>Submenu 1</a></li>
-                      <li><a>Submenu 2</a></li>
-                    </ul>
-                  </li>
-                  <li><a>Item 3</a></li>
-                </ul>
-              </div>
-              <a class="btn btn-ghost text-xl">daisyUI</a>
-            </div>
-            <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1">
-                <li><a>Item 1</a></li>
-                <li>
-                  <details>
-                    <summary>Parent</summary>
-                    <ul class="p-2">
-                      <li><a>Submenu 1</a></li>
-                      <li><a>Submenu 2</a></li>
-                    </ul>
-                  </details>
-                </li>
-                <li><a>Item 3</a></li>
-              </ul>
-            </div>
-            <div class="navbar-end">
-              <a class="btn">Button</a>
-            </div>
+  <header class="lg:px-36 bg-gradient-to-tr from-[#FFFFFF] to-[#EFEBE3]">
+    <div class="navbar py-5">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
           </div>
-    </header>
-    <main></main>
-    <footer></footer>
+          <ul tabindex="0" class="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow">
+            <li><a class="md:text-xl text-word-primary">Product</a></li>
+            <li><a class="md:text-xl text-word-primary">Services</a></li>
+            <li><a class="md:text-xl text-word-primary">Contact Us</a></li>
+          </ul>
+        </div>
+        <a class="flex justify-center items-center md:text-2xl text-text-primary">
+          <img class="md:h-12 h-6" src="c2-assets/logo-header.png" alt="">
+        </a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a class="md:text-xl text-word-primary">Product</a></li>
+          <li><a class="md:text-xl text-word-primary">Services</a></li>
+          <li><a class="md:text-xl text-word-primary">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end gap-3">
+        <i class="fa-solid fa-bell md:text-2xl"></i>
+        <i class="fa-solid fa-magnifying-glass md:text-2xl"></i>
+        <a class="btn lg:w-28 bg-transparent border-btn-color">Login</a>
+        <a class="btn lg:w-36 bg-btn-color text-black">Register</a>
+      </div>
+    </div>
+    <!-- banner section -->
+    <section class="mt-20 text-center space-y-5">
+      <h1 class="text-6xl font-semibold">Freshness <span class="text-btn-color">You Can <br>
+          Count</span> On, Prices You’ll Love!</h1>
+      <p class="text-xl text-word-primary">Shop your daily essentials at unbeatable prices. From fresh produce to pantry
+        <br> staples, we’ve got you covered every day!
+      </p>
+      <img src="c2-assets/hero-vegetables.png" alt="">
+    </section>
+  </header>
+  <main>
+
+  </main>
+  <footer></footer>
 </body>
+
 </html>
